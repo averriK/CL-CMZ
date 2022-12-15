@@ -1,0 +1,582 @@
+---
+source: R[v4.2.1]::data.table[v1.14.2]::fwrite
+creation_time_utc: 2022-08-24 22:13:33
+schema:
+  fields:
+  - name: ID
+    type: character
+  - name: SID
+    type: character
+  - name: DATE
+    type: Date
+  - name: LOC
+    type: character
+  - name: WL
+    type: numeric
+  - name: CD
+    type: numeric
+  - name: DIFF
+    type: numeric
+  - name: OBS
+    type: character
+  - name: RDATE
+    type: character
+header: yes
+sep: ','
+sep2:
+- ''
+- '|'
+- ''
+eol: "\r\n"
+na.strings: ''
+dec: '.'
+qmethod: double
+logical01: no
+---
+ID,SID,DATE,LOC,WL,CD,DIFF,OBS,RDATE
+PZ-3,POND,2020-02-27,Aguas abajo piscina,0,2988.5,0,seco,2020-02
+PZ-3,POND,2020-05-27,Aguas abajo piscina,0,2988.5,0,seco,2020-05
+PZ-3,POND,2020-07-18,Aguas abajo piscina,0,2988.5,0,seco,2020-07
+PZ-3,POND,2020-08-13,Aguas abajo piscina,0,2988.5,0,seco,2020-08
+PZ-3,POND,2020-08-30,Aguas abajo piscina,0,2988.5,0,seco,2020-08
+PZ-3,POND,2020-10-06,Aguas abajo piscina,0,2988.5,0,seco,2020-10
+PZ-3,POND,2020-11-01,Aguas abajo piscina,0,2988.5,0,seco,2020-11
+PZ-3,POND,2020-12-02,Aguas abajo piscina,0,2988.5,0,seco,2020-12
+PZ-3,POND,2020-12-01,Aguas abajo piscina,0,2988.5,0,seco,2020-12
+PZ-3,POND,2021-01-23,Aguas abajo piscina,0,2988.5,0,seco,2021-01
+PZ-3,POND,2021-02-23,Aguas abajo piscina,0,2988.5,0,seco,2021-02
+PZ-3,POND,2021-03-23,Aguas abajo piscina,0,2988.5,0,seco,2021-03
+PZ-3,POND,2021-04-23,Aguas abajo piscina,0,2988.5,0,seco,2021-04
+PZ-3,POND,2021-05-21,Aguas abajo piscina,0,2988.5,0,seco,2021-05
+PZ-3,POND,2021-06-18,Aguas abajo piscina,0,2988.5,0,seco,2021-06
+PZ-3,POND,2021-07-16,Aguas abajo piscina,0,2988.5,0,seco,2021-07
+PZ-3,POND,2021-08-16,Aguas abajo piscina,0,2988.5,0,seco,2021-08
+PZ-3,POND,2021-09-30,Aguas abajo piscina,0,2988.5,0,seco,2021-09
+PZ-3,POND,2021-10-14,Aguas abajo piscina,0,2988.5,0,seco,2021-10
+PZ-3,POND,2021-11-28,Aguas abajo piscina,0,2988.5,0,seco,2021-11
+PZ-3,POND,2021-12-28,Aguas abajo piscina,0,2988.5,0,seco,2021-12
+PZ-3,POND,2022-01-28,Aguas abajo piscina,0,2988.5,0,seco,2022-01
+PZ-3,POND,2022-02-28,Aguas abajo piscina,0,2988.5,0,seco,2022-02
+PZ-3,POND,2022-03-31,Aguas abajo piscina,0,2988.5,0,seco,2022-03
+PZ-3,POND,2022-04-30,Aguas abajo piscina,0,2988.5,0,seco,2022-04
+PZ-3,POND,2022-05-31,Aguas abajo piscina,0,2988.5,0,seco,2022-05
+PZ-3,POND,2022-06-30,Aguas abajo piscina,0,2988.5,0,seco,2022-06
+PZ-3,POND,2022-07-30,Aguas abajo piscina,0,2988.5,0,seco,2022-07
+PZ-4,POND,2020-02-27,Aguas abajo piscina,0,2999.5,0,seco,2020-02
+PZ-4,POND,2020-05-27,Aguas abajo piscina,0,2999.5,0,seco,2020-05
+PZ-4,POND,2020-07-18,Aguas abajo piscina,0,2999.5,0,seco,2020-07
+PZ-4,POND,2020-08-13,Aguas abajo piscina,0,2999.5,0,seco,2020-08
+PZ-4,POND,2020-08-30,Aguas abajo piscina,0,2999.5,0,seco,2020-08
+PZ-4,POND,2020-10-06,Aguas abajo piscina,0,2999.5,0,seco,2020-10
+PZ-4,POND,2020-11-01,Aguas abajo piscina,0,2999.5,0,seco,2020-11
+PZ-4,POND,2020-12-02,Aguas abajo piscina,0,2999.5,0,seco,2020-12
+PZ-4,POND,2020-12-01,Aguas abajo piscina,0,2999.5,0,seco,2020-12
+PZ-4,POND,2021-01-23,Aguas abajo piscina,0,2999.5,0,seco,2021-01
+PZ-4,POND,2021-02-23,Aguas abajo piscina,0,2999.5,0,seco,2021-02
+PZ-4,POND,2021-03-23,Aguas abajo piscina,0,2999.5,0,seco,2021-03
+PZ-4,POND,2021-04-23,Aguas abajo piscina,0,2999.5,0,seco,2021-04
+PZ-4,POND,2021-05-21,Aguas abajo piscina,0,2999.5,0,seco,2021-05
+PZ-4,POND,2021-06-18,Aguas abajo piscina,0,2999.5,0,seco,2021-06
+PZ-4,POND,2021-07-16,Aguas abajo piscina,0,2999.5,0,seco,2021-07
+PZ-4,POND,2021-08-16,Aguas abajo piscina,0,2999.5,0,seco,2021-08
+PZ-4,POND,2021-09-30,Aguas abajo piscina,0,2999.5,0,seco,2021-09
+PZ-4,POND,2021-10-14,Aguas abajo piscina,0,2999.5,0,seco,2021-10
+PZ-4,POND,2021-11-28,Aguas abajo piscina,0,2999.5,0,seco,2021-11
+PZ-4,POND,2021-12-28,Aguas abajo piscina,0,2999.5,0,seco,2021-12
+PZ-4,POND,2022-01-28,Aguas abajo piscina,0,2999.5,0,seco,2022-01
+PZ-4,POND,2022-02-28,Aguas abajo piscina,0,2999.5,0,seco,2022-02
+PZ-4,POND,2022-03-31,Aguas abajo piscina,0,2999.5,0,seco,2022-03
+PZ-4,POND,2022-04-30,Aguas abajo piscina,0,2999.5,0,seco,2022-04
+PZ-4,POND,2022-05-31,Aguas abajo piscina,0,2999.5,0,seco,2022-05
+PZ-4,POND,2022-06-30,Aguas abajo piscina,0,2999.5,0,seco,2022-06
+PZ-4,POND,2022-07-30,Aguas abajo piscina,0,2999.5,0,seco,2022-07
+PZ-5,POND,2020-02-27,Muro,0,3017.8,0,seco,2020-02
+PZ-5,POND,2020-05-27,Muro,0,3017.8,0,seco,2020-05
+PZ-5,POND,2020-07-18,Muro,0,3017.8,0,seco,2020-07
+PZ-5,POND,2020-08-13,Muro,0,3017.8,0,seco,2020-08
+PZ-5,POND,2020-08-30,Muro,0,3017.8,0,seco,2020-08
+PZ-5,POND,2020-10-06,Muro,0,3017.8,0,seco,2020-10
+PZ-5,POND,2020-11-01,Muro,0,3017.8,0,seco,2020-11
+PZ-5,POND,2020-12-02,Muro,0,3017.8,0,seco,2020-12
+PZ-5,POND,2020-12-01,Muro,0,3017.8,0,seco,2020-12
+PZ-5,POND,2021-01-23,Muro,0,3017.8,0,seco,2021-01
+PZ-5,POND,2021-02-23,Muro,0,3017.8,0,seco,2021-02
+PZ-5,POND,2021-03-23,Muro,0,3017.8,0,seco,2021-03
+PZ-5,POND,2021-04-23,Muro,0,3017.8,0,seco,2021-04
+PZ-5,POND,2021-05-21,Muro,0,3017.8,0,seco,2021-05
+PZ-5,POND,2021-06-18,Muro,0,3017.8,0,seco,2021-06
+PZ-5,POND,2021-07-16,Muro,0,3017.8,0,seco,2021-07
+PZ-5,POND,2021-08-16,Muro,0,3017.8,0,seco,2021-08
+PZ-5,POND,2021-09-30,Muro,0,3017.8,0,seco,2021-09
+PZ-5,POND,2021-10-14,Muro,0,3017.8,0,seco,2021-10
+PZ-5,POND,2021-11-28,Muro,0,3017.8,0,seco,2021-11
+PZ-5,POND,2021-12-28,Muro,0,3017.8,0,seco,2021-12
+PZ-5,POND,2022-01-28,Muro,0,3017.8,0,seco,2022-01
+PZ-5,POND,2022-02-28,Muro,0,3017.8,0,seco,2022-02
+PZ-5,POND,2022-03-31,Muro,0,3017.8,0,seco,2022-03
+PZ-5,POND,2022-04-30,Muro,0,3017.8,0,seco,2022-04
+PZ-5,POND,2022-05-31,Muro,0,3017.8,0,seco,2022-05
+PZ-5,POND,2022-06-30,Muro,0,3017.8,0,seco,2022-06
+PZ-5,POND,2022-07-30,Muro,0,3017.8,0,seco,2022-07
+PZ-5A,POND,2020-02-27,Muro,0,3007.4,0,seco,2020-02
+PZ-5A,POND,2020-05-27,Muro,0,3007.4,0,seco,2020-05
+PZ-5A,POND,2020-07-18,Muro,0,3007.4,0,seco,2020-07
+PZ-5A,POND,2020-08-13,Muro,0,3007.4,0,seco,2020-08
+PZ-5A,POND,2020-08-30,Muro,0,3007.4,0,seco,2020-08
+PZ-5A,POND,2020-10-06,Muro,0,3007.4,0,seco,2020-10
+PZ-5A,POND,2020-11-01,Muro,0,3007.4,0,seco,2020-11
+PZ-5A,POND,2020-12-02,Muro,0,3007.4,0,seco,2020-12
+PZ-5A,POND,2020-12-01,Muro,0,3007.4,0,seco,2020-12
+PZ-5A,POND,2021-01-23,Muro,0,3007.4,0,seco,2021-01
+PZ-5A,POND,2021-02-23,Muro,0,3007.4,0,seco,2021-02
+PZ-5A,POND,2021-03-23,Muro,0,3007.4,0,seco,2021-03
+PZ-5A,POND,2021-04-23,Muro,0,3007.4,0,seco,2021-04
+PZ-5A,POND,2021-05-21,Muro,0,3007.4,0,seco,2021-05
+PZ-5A,POND,2021-06-18,Muro,0,3007.4,0,seco,2021-06
+PZ-5A,POND,2021-07-16,Muro,0,3007.4,0,seco,2021-07
+PZ-5A,POND,2021-08-16,Muro,0,3007.4,0,seco,2021-08
+PZ-5A,POND,2021-09-30,Muro,0,3007.4,0,seco,2021-09
+PZ-5A,POND,2021-10-14,Muro,0,3007.4,0,seco,2021-10
+PZ-5A,POND,2021-11-28,Muro,0,3007.4,0,seco,2021-11
+PZ-5A,POND,2021-12-28,Muro,0,3007.4,0,seco,2021-12
+PZ-5A,POND,2022-01-28,Muro,0,3007.4,0,seco,2022-01
+PZ-5A,POND,2022-02-28,Muro,0,3007.4,0,seco,2022-02
+PZ-5A,POND,2022-03-31,Muro,0,3007.4,0,seco,2022-03
+PZ-5A,POND,2022-04-30,Muro,0,3007.4,0,seco,2022-04
+PZ-5A,POND,2022-05-31,Muro,0,3007.4,0,seco,2022-05
+PZ-5A,POND,2022-06-30,Muro,0,3007.4,0,seco,2022-06
+PZ-5A,POND,2022-07-30,Muro,0,3007.4,0,seco,2022-07
+PZ-6,POND,2020-02-27,Pie muro,0,3003.5,0,seco,2020-02
+PZ-6,POND,2020-05-27,Pie muro,0,3003.5,0,seco,2020-05
+PZ-6,POND,2020-07-18,Pie muro,0,3003.5,0,seco,2020-07
+PZ-6,POND,2020-08-13,Pie muro,0,3003.5,0,seco,2020-08
+PZ-6,POND,2020-08-30,Pie muro,0,3003.5,0,seco,2020-08
+PZ-6,POND,2020-10-06,Pie muro,0,3003.5,0,seco,2020-10
+PZ-6,POND,2020-11-01,Pie muro,0,3003.5,0,seco,2020-11
+PZ-6,POND,2020-12-02,Pie muro,0,3003.5,0,seco,2020-12
+PZ-6,POND,2020-12-01,Pie muro,0,3003.5,0,seco,2020-12
+PZ-6,POND,2021-01-23,Pie muro,0,3003.5,0,seco,2021-01
+PZ-6,POND,2021-02-23,Pie muro,0,3003.5,0,seco,2021-02
+PZ-6,POND,2021-03-23,Pie muro,0,3003.5,0,seco,2021-03
+PZ-6,POND,2021-04-23,Pie muro,0,3003.5,0,seco,2021-04
+PZ-6,POND,2021-05-21,Pie muro,0,3003.5,0,seco,2021-05
+PZ-6,POND,2021-06-18,Pie muro,0,3003.5,0,seco,2021-06
+PZ-6,POND,2021-07-16,Pie muro,0,3003.5,0,seco,2021-07
+PZ-6,POND,2021-08-16,Pie muro,0,3003.5,0,seco,2021-08
+PZ-6,POND,2021-09-30,Pie muro,0,3003.5,0,seco,2021-09
+PZ-6,POND,2021-10-14,Pie muro,0,3003.5,0,seco,2021-10
+PZ-6,POND,2021-11-28,Pie muro,0,3003.5,0,seco,2021-11
+PZ-6,POND,2021-12-28,Pie muro,0,3003.5,0,seco,2021-12
+PZ-6,POND,2022-01-28,Pie muro,0,3003.5,0,seco,2022-01
+PZ-6,POND,2022-02-28,Pie muro,0,3003.5,0,seco,2022-02
+PZ-6,POND,2022-03-31,Pie muro,0,3003.5,0,seco,2022-03
+PZ-6,POND,2022-04-30,Pie muro,0,3003.5,0,seco,2022-04
+PZ-6,POND,2022-05-31,Pie muro,0,3003.5,0,seco,2022-05
+PZ-6,POND,2022-06-30,Pie muro,0,3003.5,0,seco,2022-06
+PZ-6,POND,2022-07-30,Pie muro,0,3003.5,0,seco,2022-07
+PA-7,POND,2020-02-27,Aguas abajo piscina,0,2992.6,0,seco,2020-02
+PA-7,POND,2020-05-27,Aguas abajo piscina,0,2992.6,0,seco,2020-05
+PA-7,POND,2020-07-18,Aguas abajo piscina,0,2992.6,0,seco,2020-07
+PA-7,POND,2020-08-13,Aguas abajo piscina,0,2992.6,0,seco,2020-08
+PA-7,POND,2020-08-30,Aguas abajo piscina,0,2992.6,0,seco,2020-08
+PA-7,POND,2020-10-06,Aguas abajo piscina,0,2992.6,0,seco,2020-10
+PA-7,POND,2020-11-01,Aguas abajo piscina,0,2992.6,0,seco,2020-11
+PA-7,POND,2020-12-02,Aguas abajo piscina,0,2992.6,0,seco,2020-12
+PA-7,POND,2020-12-01,Aguas abajo piscina,0,2992.6,0,seco,2020-12
+PA-7,POND,2021-01-23,Aguas abajo piscina,0,2992.6,0,seco,2021-01
+PA-7,POND,2021-02-23,Aguas abajo piscina,0,2992.6,0,seco,2021-02
+PA-7,POND,2021-03-23,Aguas abajo piscina,0,2992.6,0,seco,2021-03
+PA-7,POND,2021-04-23,Aguas abajo piscina,0,2992.6,0,seco,2021-04
+PA-7,POND,2021-05-21,Aguas abajo piscina,0,2992.6,0,seco,2021-05
+PA-7,POND,2021-06-18,Aguas abajo piscina,0,2992.6,0,seco,2021-06
+PA-7,POND,2021-07-16,Aguas abajo piscina,0,2992.6,0,seco,2021-07
+PA-7,POND,2021-08-16,Aguas abajo piscina,0,2992.6,0,seco,2021-08
+PA-7,POND,2021-09-30,Aguas abajo piscina,0,2992.6,0,seco,2021-09
+PA-7,POND,2021-10-14,Aguas abajo piscina,0,2992.6,0,seco,2021-10
+PA-7,POND,2021-11-28,Aguas abajo piscina,0,2992.6,0,seco,2021-11
+PA-7,POND,2021-12-28,Aguas abajo piscina,0,2992.6,0,seco,2021-12
+PA-7,POND,2022-01-28,Aguas abajo piscina,0,2992.6,0,seco,2022-01
+PA-7,POND,2022-02-28,Aguas abajo piscina,0,2992.6,0,seco,2022-02
+PA-7,POND,2022-03-31,Aguas abajo piscina,0,2992.6,0,seco,2022-03
+PA-7,POND,2022-04-30,Aguas abajo piscina,0,2992.6,0,seco,2022-04
+PA-7,POND,2022-05-31,Aguas abajo piscina,0,2992.6,0,seco,2022-05
+PA-7,POND,2022-06-30,Aguas abajo piscina,0,2992.6,0,seco,2022-06
+PA-7,POND,2022-07-30,Aguas abajo piscina,0,2992.6,0,seco,2022-07
+PA-8,POND,2020-02-27,Aguas abajo piscina,45.1,2969,0,agua,2020-02
+PA-8,POND,2020-05-27,Aguas abajo piscina,44.2,2968.1,-0.89,agua,2020-05
+PA-8,POND,2020-07-18,Aguas abajo piscina,44.2,2968.1,0,agua,2020-07
+PA-8,POND,2020-08-13,Aguas abajo piscina,44.2,2968.1,0,agua,2020-08
+PA-8,POND,2020-08-30,Aguas abajo piscina,43.8,2967.7,-0.47,agua,2020-08
+PA-8,POND,2020-10-06,Aguas abajo piscina,43.1,2967,-0.71,agua,2020-10
+PA-8,POND,2020-11-01,Aguas abajo piscina,42.6,2966.5,-0.51,agua,2020-11
+PA-8,POND,2020-12-02,Aguas abajo piscina,42,2965.9,-0.51,agua,2020-12
+PA-8,POND,2020-12-01,Aguas abajo piscina,42,2965.9,-0.05,agua,2020-12
+PA-8,POND,2021-01-23,Aguas abajo piscina,41.5,2965.4,-0.5,agua,2021-01
+PA-8,POND,2021-02-23,Aguas abajo piscina,36.1,2960,-5.35,agua,2021-02
+PA-8,POND,2021-03-23,Aguas abajo piscina,37,2960.8,0.8,agua,2021-03
+PA-8,POND,2021-04-23,Aguas abajo piscina,34.6,2958.5,-2.35,agua,2021-04
+PA-8,POND,2021-05-21,Aguas abajo piscina,33.1,2957,-1.54,agua,2021-05
+PA-8,POND,2021-06-18,Aguas abajo piscina,34.1,2958,1.04,agua,2021-06
+PA-8,POND,2021-07-16,Aguas abajo piscina,39.6,2963.5,5.46,agua,2021-07
+PA-8,POND,2021-08-16,Aguas abajo piscina,33.5,2957.4,-6.06,agua,2021-08
+PA-8,POND,2021-09-30,Aguas abajo piscina,33.4,2957.3,-0.06,agua,2021-09
+PA-8,POND,2021-10-14,Aguas abajo piscina,31.6,2955.5,-1.84,agua,2021-10
+PA-8,POND,2021-11-28,Aguas abajo piscina,32.5,2956.4,0.86,agua,2021-11
+PA-8,POND,2021-12-28,Aguas abajo piscina,32.5,2956.4,0.03,agua,2021-12
+PA-8,POND,2022-01-28,Aguas abajo piscina,31.2,2955.1,-1.28,agua,2022-01
+PA-8,POND,2022-02-28,Aguas abajo piscina,36.5,2960.4,5.28,agua,2022-02
+PA-8,POND,2022-03-31,Aguas abajo piscina,29.4,2953.3,-7.11,agua,2022-03
+PA-8,POND,2022-04-30,Aguas abajo piscina,28.7,2952.6,-0.71,agua,2022-04
+PA-8,POND,2022-05-31,Aguas abajo piscina,28,2951.9,-0.71,agua,2022-05
+PA-8,POND,2022-06-30,Aguas abajo piscina,24.9,2948.8,-3.1,agua,2022-06
+PA-8,POND,2022-07-30,Aguas abajo piscina,26.3,2950.2,1.47,agua,2022-07
+PA-2,TSF,2020-02-27,Pie muro,0,3031.1,0,seco,2020-02
+PA-2,TSF,2020-05-27,Pie muro,0,3031.1,0,seco,2020-05
+PA-2,TSF,2020-07-18,Pie muro,0,3031.1,0,seco,2020-07
+PA-2,TSF,2020-08-13,Pie muro,0,3031.1,0,seco,2020-08
+PA-2,TSF,2020-08-30,Pie muro,0,3031.1,0,seco,2020-08
+PA-2,TSF,2020-10-06,Pie muro,0,3031.1,0,seco,2020-10
+PA-2,TSF,2020-11-01,Pie muro,0,3031.1,0,seco,2020-11
+PA-2,TSF,2020-12-02,Pie muro,0,3031.1,0,seco,2020-12
+PA-2,TSF,2020-12-01,Pie muro,0,3031.1,0,seco,2020-12
+PA-2,TSF,2021-01-23,Pie muro,0,3031.1,0,seco,2021-01
+PA-2,TSF,2021-02-23,Pie muro,0,3031.1,0,seco,2021-02
+PA-2,TSF,2021-03-23,Pie muro,10,3041.1,10,agua,2021-03
+PA-2,TSF,2021-04-23,Pie muro,11,3042.1,0.98,agua,2021-04
+PA-2,TSF,2021-05-21,Pie muro,8.8,3039.9,-2.2,agua,2021-05
+PA-2,TSF,2021-06-18,Pie muro,10.2,3041.3,1.45,agua,2021-06
+PA-2,TSF,2021-07-16,Pie muro,7.4,3038.5,-2.79,agua,2021-07
+PA-2,TSF,2021-08-16,Pie muro,5.7,3036.8,-1.73,agua,2021-08
+PA-2,TSF,2021-09-30,Pie muro,9,3040.1,3.28,agua,2021-09
+PA-2,TSF,2021-10-14,Pie muro,7.2,3038.3,-1.75,agua,2021-10
+PA-2,TSF,2021-11-14,Pie muro,5.1,3036.2,-2.17,agua,2021-11
+PA-2,TSF,2021-12-14,Pie muro,5.7,3036.8,0.64,agua,2021-12
+PA-2,TSF,2022-01-14,Pie muro,4.7,3035.8,-1,agua,2022-01
+PA-2,TSF,2022-02-14,Pie muro,5.8,3036.8,1.04,agua,2022-02
+PA-2,TSF,2022-03-14,Pie muro,5.5,3036.6,-0.21,agua,2022-03
+PA-2,TSF,2022-04-14,Pie muro,5.6,3036.7,0.09,agua,2022-04
+PA-2,TSF,2022-05-14,Pie muro,4.8,3035.9,-0.79,agua,2022-05
+PA-2,TSF,2022-06-14,Pie muro,6.3,3037.4,1.44,agua,2022-06
+PA-2,TSF,2022-07-30,Pie muro,7.7,3038.8,1.46,agua,2022-07
+PA-3,TSF,2020-02-27,Pie muro,8.1,3041.7,0.8,agua,2020-02
+PA-3,TSF,2020-05-27,Pie muro,8,3041.6,-0.1,agua,2020-05
+PA-3,TSF,2020-07-18,Pie muro,4.6,3038.1,-3.41,agua,2020-07
+PA-3,TSF,2020-08-13,Pie muro,4,3037.5,-0.68,agua,2020-08
+PA-3,TSF,2020-08-30,Pie muro,3.8,3037.3,-0.18,agua,2020-08
+PA-3,TSF,2020-10-06,Pie muro,4.4,3037.9,0.62,agua,2020-10
+PA-3,TSF,2020-11-01,Pie muro,5.7,3039.2,1.3,agua,2020-11
+PA-3,TSF,2020-12-02,Pie muro,5.6,3039.1,-0.12,agua,2020-12
+PA-3,TSF,2020-12-01,Pie muro,4.9,3038.4,-0.7,agua,2020-12
+PA-3,TSF,2021-01-23,Pie muro,2.8,3036.2,-2.13,agua,2021-01
+PA-3,TSF,2021-02-23,Pie muro,2.9,3036.4,0.15,agua,2021-02
+PA-3,TSF,2021-03-23,Pie muro,8.8,3042.3,5.95,agua,2021-03
+PA-3,TSF,2021-04-23,Pie muro,9,3042.5,0.15,agua,2021-04
+PA-3,TSF,2021-05-21,Pie muro,5.4,3038.9,-3.56,agua,2021-05
+PA-3,TSF,2021-06-18,Pie muro,8.7,3042.2,3.26,agua,2021-06
+PA-3,TSF,2021-07-16,Pie muro,4.1,3037.6,-4.6,agua,2021-07
+PA-3,TSF,2021-08-16,Pie muro,4.9,3038.5,0.85,agua,2021-08
+PA-3,TSF,2021-09-30,Pie muro,7.3,3040.8,2.35,agua,2021-09
+PA-3,TSF,2021-10-14,Pie muro,4.9,3038.4,-2.4,agua,2021-10
+PA-3,TSF,2021-11-14,Pie muro,3.3,3036.8,-1.64,agua,2021-11
+PA-3,TSF,2021-12-14,Pie muro,3.9,3037.5,0.69,agua,2021-12
+PA-3,TSF,2022-01-14,Pie muro,2.6,3036.1,-1.38,agua,2022-01
+PA-3,TSF,2022-02-14,Pie muro,2.3,3035.8,-0.24,agua,2022-02
+PA-3,TSF,2022-03-14,Pie muro,3.4,3036.9,1.07,agua,2022-03
+PA-3,TSF,2022-04-14,Pie muro,3.7,3037.2,0.27,agua,2022-04
+PA-3,TSF,2022-05-14,Pie muro,3.7,3037.2,0.01,agua,2022-05
+PA-3,TSF,2022-06-14,Pie muro,3,3036.5,-0.68,agua,2022-06
+PA-3,TSF,2022-07-30,Pie muro,6.6,3040.2,3.65,agua,2022-07
+PA-4,TSF,2020-02-27,Pie muro,16.1,3037.3,0.65,agua,2020-02
+PA-4,TSF,2020-05-27,Pie muro,14.9,3036.1,-1.2,agua,2020-05
+PA-4,TSF,2020-07-18,Pie muro,13.5,3034.7,-1.41,agua,2020-07
+PA-4,TSF,2020-08-13,Pie muro,12.8,3034,-0.72,agua,2020-08
+PA-4,TSF,2020-08-30,Pie muro,12.5,3033.7,-0.24,agua,2020-08
+PA-4,TSF,2020-10-06,Pie muro,13,3034.2,0.46,agua,2020-10
+PA-4,TSF,2020-11-01,Pie muro,12.6,3033.8,-0.41,agua,2020-11
+PA-4,TSF,2020-12-02,Pie muro,12.6,3033.8,0.04,agua,2020-12
+PA-4,TSF,2020-12-01,Pie muro,12.3,3033.5,-0.36,agua,2020-12
+PA-4,TSF,2021-01-23,Pie muro,11.5,3032.7,-0.72,agua,2021-01
+PA-4,TSF,2021-02-23,Pie muro,8.7,3029.9,-2.87,agua,2021-02
+PA-4,TSF,2021-03-23,Pie muro,8.7,3029.9,0,agua,2021-03
+PA-4,TSF,2021-04-23,Pie muro,11.2,3032.4,2.53,agua,2021-04
+PA-4,TSF,2021-05-21,Pie muro,10.2,3031.4,-0.99,agua,2021-05
+PA-4,TSF,2021-06-18,Pie muro,11.2,3032.4,0.99,agua,2021-06
+PA-4,TSF,2021-07-16,Pie muro,9.7,3030.9,-1.52,agua,2021-07
+PA-4,TSF,2021-08-16,Pie muro,8.6,3029.8,-1.04,agua,2021-08
+PA-4,TSF,2021-09-30,Pie muro,10.4,3031.6,1.73,agua,2021-09
+PA-4,TSF,2021-10-14,Pie muro,9.2,3030.4,-1.17,agua,2021-10
+PA-4,TSF,2021-11-14,Pie muro,10.2,3031.4,0.98,agua,2021-11
+PA-4,TSF,2021-12-14,Pie muro,9.2,3030.4,-1.02,agua,2021-12
+PA-4,TSF,2022-01-14,Pie muro,8.5,3029.7,-0.69,agua,2022-01
+PA-4,TSF,2022-02-14,Pie muro,11.3,3032.5,2.87,agua,2022-02
+PA-4,TSF,2022-03-14,Pie muro,8.7,3029.9,-2.64,agua,2022-03
+PA-4,TSF,2022-04-14,Pie muro,8.6,3029.8,-0.1,agua,2022-04
+PA-4,TSF,2022-05-14,Pie muro,8.3,3029.5,-0.26,agua,2022-05
+PA-4,TSF,2022-06-14,Pie muro,9.1,3030.3,0.72,agua,2022-06
+PA-4,TSF,2022-07-30,Pie muro,9.9,3031.1,0.85,agua,2022-07
+PA-5,TSF,2020-02-27,Pie muro,0,3041.5,0,seco,2020-02
+PA-5,TSF,2020-05-27,Pie muro,0,3041.5,0,seco,2020-05
+PA-5,TSF,2020-07-18,Pie muro,0,3041.5,0,seco,2020-07
+PA-5,TSF,2020-08-13,Pie muro,0,3041.5,0,seco,2020-08
+PA-5,TSF,2020-08-30,Pie muro,0,3041.5,0,seco,2020-08
+PA-5,TSF,2020-10-06,Pie muro,0,3041.5,0,seco,2020-10
+PA-5,TSF,2020-11-01,Pie muro,0,3041.5,0,seco,2020-11
+PA-5,TSF,2020-12-02,Pie muro,0,3041.5,0,seco,2020-12
+PA-5,TSF,2020-12-01,Pie muro,0,3041.5,0,seco,2020-12
+PA-5,TSF,2021-01-23,Pie muro,0,3041.5,0,seco,2021-01
+PA-5,TSF,2021-02-23,Pie muro,0,3041.5,0,seco,2021-02
+PA-5,TSF,2021-03-23,Pie muro,2.1,3043.6,2.1,agua,2021-03
+PA-5,TSF,2021-04-23,Pie muro,2.4,3043.9,0.32,agua,2021-04
+PA-5,TSF,2021-05-21,Pie muro,0,3041.5,-2.42,seco,2021-05
+PA-5,TSF,2021-06-18,Pie muro,0.4,3041.9,0.42,agua,2021-06
+PA-5,TSF,2021-07-16,Pie muro,0,3041.5,-0.42,seco,2021-07
+PA-5,TSF,2021-08-16,Pie muro,0,3041.5,0,seco,2021-08
+PA-5,TSF,2021-09-30,Pie muro,0,3041.5,0,seco,2021-09
+PA-5,TSF,2021-10-14,Pie muro,0,3041.5,0,seco,2021-10
+PA-5,TSF,2021-11-14,Pie muro,0,3041.5,0,seco,2021-11
+PA-5,TSF,2021-12-14,Pie muro,0,3041.5,0,seco,2021-12
+PA-5,TSF,2022-01-14,Pie muro,0,3041.5,0,seco,2022-01
+PA-5,TSF,2022-02-14,Pie muro,0,3041.5,0,seco,2022-02
+PA-5,TSF,2022-03-14,Pie muro,0,3041.5,0,seco,2022-03
+PA-5,TSF,2022-04-14,Pie muro,0,3041.5,0,seco,2022-04
+PA-5,TSF,2022-05-14,Pie muro,0,3041.5,0,seco,2022-05
+PA-5,TSF,2022-06-14,Pie muro,0,3041.5,0,seco,2022-06
+PA-5,TSF,2022-07-30,Pie muro,0,3041.5,0,seco,2022-07
+PA-6,TSF,2020-02-27,Pie muro,0,3048,0,seco,2020-02
+PA-6,TSF,2020-05-27,Pie muro,0,3048,0,seco,2020-05
+PA-6,TSF,2020-07-18,Pie muro,0,3048,0,seco,2020-07
+PA-6,TSF,2020-08-13,Pie muro,0,3048,0,seco,2020-08
+PA-6,TSF,2020-08-30,Pie muro,0,3048,0,seco,2020-08
+PA-6,TSF,2020-10-06,Pie muro,0,3048,0,seco,2020-10
+PA-6,TSF,2020-11-01,Pie muro,0,3048,0,seco,2020-11
+PA-6,TSF,2020-12-02,Pie muro,0,3048,0,seco,2020-12
+PA-6,TSF,2020-12-01,Pie muro,0,3048,0,seco,2020-12
+PA-6,TSF,2021-01-23,Pie muro,0,3048,0,seco,2021-01
+PA-6,TSF,2021-02-23,Pie muro,0,3048,0,seco,2021-02
+PA-6,TSF,2021-03-23,Pie muro,0,3048,0,seco,2021-03
+PA-6,TSF,2021-04-23,Pie muro,0.6,3048.6,0.55,agua,2021-04
+PA-6,TSF,2021-05-21,Pie muro,0,3048,-0.55,seco,2021-05
+PA-6,TSF,2021-06-18,Pie muro,0,3048,0,seco,2021-06
+PA-6,TSF,2021-07-16,Pie muro,0,3048,0,seco,2021-07
+PA-6,TSF,2021-08-16,Pie muro,0,3048,0,seco,2021-08
+PA-6,TSF,2021-09-30,Pie muro,0,3048,0,seco,2021-09
+PA-6,TSF,2021-10-14,Pie muro,0,3048,0,seco,2021-10
+PA-6,TSF,2021-11-14,Pie muro,0,3048,0,seco,2021-11
+PA-6,TSF,2021-12-14,Pie muro,0,3048,0,seco,2021-12
+PA-6,TSF,2022-01-14,Pie muro,0,3048,0,seco,2022-01
+PA-6,TSF,2022-02-14,Pie muro,0,3048,0,seco,2022-02
+PA-6,TSF,2022-03-14,Pie muro,0,3048,0,seco,2022-03
+PA-6,TSF,2022-04-14,Pie muro,0,3048,0,seco,2022-04
+PA-6,TSF,2022-05-14,Pie muro,0,3048,0,seco,2022-05
+PA-6,TSF,2022-06-14,Pie muro,0,3048,0,seco,2022-06
+PA-6,TSF,2022-07-30,Pie muro,0,3048,0,seco,2022-07
+PZ-2,TSF,2020-02-27,Pie muro,0,3049.7,0,seco,2020-02
+PZ-2,TSF,2020-05-27,Pie muro,0,3049.7,0,seco,2020-05
+PZ-2,TSF,2020-07-18,Pie muro,0,3049.7,0,seco,2020-07
+PZ-2,TSF,2020-08-13,Pie muro,0,3049.7,0,seco,2020-08
+PZ-2,TSF,2020-08-30,Pie muro,0,3049.7,0,seco,2020-08
+PZ-2,TSF,2020-10-06,Pie muro,0,3049.7,0,seco,2020-10
+PZ-2,TSF,2020-11-01,Pie muro,0,3049.7,0,seco,2020-11
+PZ-2,TSF,2020-12-02,Pie muro,0,3049.7,0,seco,2020-12
+PZ-2,TSF,2020-12-01,Pie muro,0,3049.7,0,seco,2020-12
+PZ-2,TSF,2021-01-23,Pie muro,0,3049.7,0,seco,2021-01
+PZ-2,TSF,2021-02-23,Pie muro,0,3049.7,0,seco,2021-02
+PZ-2,TSF,2021-03-23,Pie muro,0,3049.7,0,seco,2021-03
+PZ-2,TSF,2021-04-23,Pie muro,0,3049.7,0,seco,2021-04
+PZ-2,TSF,2021-05-21,Pie muro,0,3049.7,0,seco,2021-05
+PZ-2,TSF,2021-06-18,Pie muro,0,3049.7,0,seco,2021-06
+PZ-2,TSF,2021-07-16,Pie muro,0,3049.7,0,seco,2021-07
+PZ-2,TSF,2021-08-16,Pie muro,0,3049.7,0,seco,2021-08
+PZ-2,TSF,2021-09-30,Pie muro,0,3049.7,0,seco,2021-09
+PZ-2,TSF,2021-10-14,Pie muro,0,3049.7,0,seco,2021-10
+PZ-2,TSF,2021-11-14,Pie muro,0,3049.7,0,seco,2021-11
+PZ-2,TSF,2021-12-14,Pie muro,0,3049.7,0,seco,2021-12
+PZ-2,TSF,2022-01-14,Pie muro,0,3049.7,0,seco,2022-01
+PZ-2,TSF,2022-02-14,Pie muro,0,3049.7,0,seco,2022-02
+PZ-2,TSF,2022-03-14,Pie muro,0,3049.7,0,seco,2022-03
+PZ-2,TSF,2022-04-14,Pie muro,0,3049.7,0,seco,2022-04
+PZ-2,TSF,2022-05-14,Pie muro,0,3049.7,0,seco,2022-05
+PZ-2,TSF,2022-06-14,Pie muro,0,3049.7,0,seco,2022-06
+PZ-2,TSF,2022-07-30,Pie muro,0,3049.7,0,seco,2022-07
+PZ-2-4,TSF,2020-02-27,Pie muro,0,3054.8,0,seco,2020-02
+PZ-2-4,TSF,2020-05-27,Pie muro,0,3054.8,0,seco,2020-05
+PZ-2-4,TSF,2020-07-18,Pie muro,0,3054.8,0,seco,2020-07
+PZ-2-4,TSF,2020-08-13,Pie muro,0,3054.8,0,seco,2020-08
+PZ-2-4,TSF,2020-08-30,Pie muro,0,3054.8,0,seco,2020-08
+PZ-2-4,TSF,2020-10-06,Pie muro,0,3054.8,0,seco,2020-10
+PZ-2-4,TSF,2020-11-01,Pie muro,0,3054.8,0,seco,2020-11
+PZ-2-4,TSF,2020-12-02,Pie muro,0,3054.8,0,seco,2020-12
+PZ-2-4,TSF,2020-12-01,Pie muro,0,3054.8,0,seco,2020-12
+PZ-2-4,TSF,2021-01-23,Pie muro,0,3054.8,0,seco,2021-01
+PZ-2-4,TSF,2021-02-23,Pie muro,0,3054.8,0,seco,2021-02
+PZ-2-4,TSF,2021-03-23,Pie muro,0,3054.8,0,seco,2021-03
+PZ-2-4,TSF,2021-04-23,Pie muro,0,3054.8,0,seco,2021-04
+PZ-2-4,TSF,2021-05-21,Pie muro,0,3054.8,0,seco,2021-05
+PZ-3,TSF,2020-02-27,Coronamiento muro,0,3063.9,0,seco,2020-02
+PZ-3,TSF,2020-05-27,Coronamiento muro,0,3063.9,0,seco,2020-05
+PZ-3,TSF,2020-07-18,Coronamiento muro,0,3063.9,0,seco,2020-07
+PZ-3,TSF,2020-08-13,Coronamiento muro,0,3063.9,0,seco,2020-08
+PZ-3,TSF,2020-08-30,Coronamiento muro,0,3063.9,0,seco,2020-08
+PZ-3,TSF,2020-10-06,Coronamiento muro,0,3063.9,0,seco,2020-10
+PZ-3,TSF,2020-11-01,Coronamiento muro,0,3063.9,0,seco,2020-11
+PZ-3,TSF,2020-12-02,Coronamiento muro,0,3063.9,0,seco,2020-12
+PZ-3,TSF,2020-12-01,Coronamiento muro,0,3063.9,0,seco,2020-12
+PZ-3,TSF,2021-01-23,Coronamiento muro,0,3063.9,0,seco,2021-01
+PZ-3,TSF,2021-02-23,Coronamiento muro,0,3063.9,0,seco,2021-02
+PZ-3,TSF,2021-03-23,Coronamiento muro,0,3063.9,0,seco,2021-03
+PZ-3,TSF,2021-04-23,Coronamiento muro,0,3063.9,0,seco,2021-04
+PZ-3,TSF,2021-05-21,Coronamiento muro,0,3063.9,0,seco,2021-05
+PZ-3,TSF,2021-06-18,Coronamiento muro,0,3063.9,0,seco,2021-06
+PZ-3,TSF,2021-07-16,Coronamiento muro,0,3063.9,0,seco,2021-07
+PZ-3,TSF,2021-08-16,Coronamiento muro,0,3063.9,0,seco,2021-08
+PZ-3,TSF,2021-09-30,Coronamiento muro,0,3063.9,0,seco,2021-09
+PZ-3,TSF,2021-10-14,Coronamiento muro,0,3063.9,0,seco,2021-10
+PZ-3,TSF,2021-11-14,Coronamiento muro,0,3063.9,0,seco,2021-11
+PZ-3,TSF,2021-12-14,Coronamiento muro,0,3063.9,0,seco,2021-12
+PZ-3,TSF,2022-01-14,Coronamiento muro,0,3063.9,0,seco,2022-01
+PZ-3,TSF,2022-02-14,Coronamiento muro,0,3063.9,0,seco,2022-02
+PZ-3,TSF,2022-03-14,Coronamiento muro,0,3063.9,0,seco,2022-03
+PZ-3,TSF,2022-04-14,Coronamiento muro,0,3063.9,0,seco,2022-04
+PZ-3,TSF,2022-05-14,Coronamiento muro,0,3063.9,0,seco,2022-05
+PZ-3,TSF,2022-06-14,Coronamiento muro,0,3063.9,0,seco,2022-06
+PZ-3,TSF,2022-07-30,Coronamiento muro,0,3063.9,0,seco,2022-07
+PZ-4,TSF,2020-02-27,Coronamiento muro,0,3086.5,0,seco,2020-02
+PZ-4,TSF,2020-05-27,Coronamiento muro,0,3086.5,0,seco,2020-05
+PZ-4,TSF,2020-07-18,Coronamiento muro,0,3086.5,0,seco,2020-07
+PZ-4,TSF,2020-08-13,Coronamiento muro,0,3086.5,0,seco,2020-08
+PZ-4,TSF,2020-08-30,Coronamiento muro,0,3086.5,0,seco,2020-08
+PZ-4,TSF,2020-10-06,Coronamiento muro,0,3086.5,0,seco,2020-10
+PZ-4,TSF,2020-11-01,Coronamiento muro,0,3086.5,0,seco,2020-11
+PZ-4,TSF,2020-12-02,Coronamiento muro,0,3086.5,0,seco,2020-12
+PZ-4,TSF,2020-12-01,Coronamiento muro,0,3086.5,0,seco,2020-12
+PZ-4,TSF,2021-01-23,Coronamiento muro,0,3086.5,0,seco,2021-01
+PZ-4,TSF,2021-02-23,Coronamiento muro,0,3086.5,0,seco,2021-02
+PZ-4,TSF,2021-03-23,Coronamiento muro,0,3086.5,0,seco,2021-03
+PZ-4,TSF,2021-04-23,Coronamiento muro,0,3086.5,0,seco,2021-04
+PZ-4,TSF,2021-05-21,Coronamiento muro,0,3086.5,0,seco,2021-05
+PZ-4,TSF,2021-06-18,Coronamiento muro,0,3086.5,0,seco,2021-06
+PZ-4,TSF,2021-07-16,Coronamiento muro,0,3086.5,0,seco,2021-07
+PZ-4,TSF,2021-08-16,Coronamiento muro,0,3086.5,0,seco,2021-08
+PZ-4,TSF,2021-09-30,Coronamiento muro,0,3086.5,0,seco,2021-09
+PZ-4,TSF,2021-10-14,Coronamiento muro,0,3086.5,0,seco,2021-10
+PZ-4,TSF,2021-11-14,Coronamiento muro,0,3086.5,0,seco,2021-11
+PZ-4,TSF,2021-12-14,Coronamiento muro,0,3086.5,0,seco,2021-12
+PZ-4,TSF,2022-01-14,Coronamiento muro,0,3086.5,0,seco,2022-01
+PZ-4,TSF,2022-02-14,Coronamiento muro,0,3086.5,0,seco,2022-02
+PZ-4,TSF,2022-03-14,Coronamiento muro,0,3086.5,0,seco,2022-03
+PZ-4,TSF,2022-04-14,Coronamiento muro,0,3086.5,0,seco,2022-04
+PZ-4,TSF,2022-05-14,Coronamiento muro,0,3086.5,0,seco,2022-05
+PZ-4,TSF,2022-06-14,Coronamiento muro,0,3086.5,0,seco,2022-06
+PZ-4,TSF,2022-07-30,Coronamiento muro,0,3086.5,0,seco,2022-07
+PZ-5,TSF,2020-02-27,Coronamiento muro,0,3058.1,0,seco,2020-02
+PZ-5,TSF,2020-05-27,Coronamiento muro,0,3058.1,0,seco,2020-05
+PZ-5,TSF,2020-07-18,Coronamiento muro,0,3058.1,0,seco,2020-07
+PZ-5,TSF,2020-08-13,Coronamiento muro,0,3058.1,0,seco,2020-08
+PZ-5,TSF,2020-08-30,Coronamiento muro,0,3058.1,0,seco,2020-08
+PZ-5,TSF,2020-10-06,Coronamiento muro,0,3058.1,0,seco,2020-10
+PZ-5,TSF,2020-11-01,Coronamiento muro,0,3058.1,0,seco,2020-11
+PZ-5,TSF,2020-12-02,Coronamiento muro,0,3058.1,0,seco,2020-12
+PZ-5,TSF,2020-12-01,Coronamiento muro,0,3058.1,0,seco,2020-12
+PZ-5,TSF,2021-01-23,Coronamiento muro,0,3058.1,0,seco,2021-01
+PZ-5,TSF,2021-02-23,Coronamiento muro,0,3058.1,0,seco,2021-02
+PZ-5,TSF,2021-03-23,Coronamiento muro,0,3058.1,0,seco,2021-03
+PZ-5,TSF,2021-04-23,Coronamiento muro,0,3058.1,0,seco,2021-04
+PZ-5,TSF,2021-05-21,Coronamiento muro,0,3058.1,0,seco,2021-05
+PZ-5,TSF,2021-06-18,Coronamiento muro,0,3058.1,0,seco,2021-06
+PZ-5,TSF,2021-07-16,Coronamiento muro,0,3058.1,0,seco,2021-07
+PZ-5,TSF,2021-08-16,Coronamiento muro,0,3058.1,0,seco,2021-08
+PZ-5,TSF,2021-09-30,Coronamiento muro,0,3058.1,0,seco,2021-09
+PZ-5,TSF,2021-10-14,Coronamiento muro,0,3058.1,0,seco,2021-10
+PZ-5,TSF,2021-11-14,Coronamiento muro,0,3058.1,0,seco,2021-11
+PZ-5,TSF,2021-12-14,Coronamiento muro,0,3058.1,0,seco,2021-12
+PZ-5,TSF,2022-01-14,Coronamiento muro,0,3058.1,0,seco,2022-01
+PZ-5,TSF,2022-02-14,Coronamiento muro,0,3058.1,0,seco,2022-02
+PZ-5,TSF,2022-03-14,Coronamiento muro,0,3058.1,0,seco,2022-03
+PZ-5,TSF,2022-04-14,Coronamiento muro,0,3058.1,0,seco,2022-04
+PZ-5,TSF,2022-05-14,Coronamiento muro,0,3058.1,0,seco,2022-05
+PZ-5,TSF,2022-06-14,Coronamiento muro,0,3058.1,0,seco,2022-06
+PZ-5,TSF,2022-07-30,Coronamiento muro,0,3058.1,0,seco,2022-07
+PZ-6,TSF,2020-02-27,Coronamiento muro,0,3061.2,0,seco,2020-02
+PZ-6,TSF,2020-05-27,Coronamiento muro,0,3061.2,0,seco,2020-05
+PZ-6,TSF,2020-07-18,Coronamiento muro,0,3061.2,0,seco,2020-07
+PZ-6,TSF,2020-08-13,Coronamiento muro,0,3061.2,0,seco,2020-08
+PZ-6,TSF,2020-08-30,Coronamiento muro,0,3061.2,0,seco,2020-08
+PZ-6,TSF,2020-10-06,Coronamiento muro,0,3061.2,0,seco,2020-10
+PZ-6,TSF,2020-11-01,Coronamiento muro,0,3061.2,0,seco,2020-11
+PZ-6,TSF,2020-12-02,Coronamiento muro,0,3061.2,0,seco,2020-12
+PZ-6,TSF,2020-12-01,Coronamiento muro,0,3061.2,0,seco,2020-12
+PZ-6,TSF,2021-01-23,Coronamiento muro,0,3061.2,0,seco,2021-01
+PZ-6,TSF,2021-02-23,Coronamiento muro,0,3061.2,0,seco,2021-02
+PZ-6,TSF,2021-03-23,Coronamiento muro,0,3061.2,0,seco,2021-03
+PZ-6,TSF,2021-04-23,Coronamiento muro,0,3061.2,0,seco,2021-04
+PZ-6,TSF,2021-05-21,Coronamiento muro,0,3061.2,0,seco,2021-05
+PZ-6,TSF,2021-06-18,Coronamiento muro,0,3061.2,0,seco,2021-06
+PZ-6,TSF,2021-07-16,Coronamiento muro,0,3061.2,0,seco,2021-07
+PZ-6,TSF,2021-08-16,Coronamiento muro,0,3061.2,0,seco,2021-08
+PZ-6,TSF,2021-09-30,Coronamiento muro,0,3061.2,0,seco,2021-09
+PZ-6,TSF,2021-10-14,Coronamiento muro,0,3061.2,0,seco,2021-10
+PZ-6,TSF,2021-11-14,Coronamiento muro,0,3061.2,0,seco,2021-11
+PZ-6,TSF,2021-12-14,Coronamiento muro,0,3061.2,0,seco,2021-12
+PZ-6,TSF,2022-01-14,Coronamiento muro,0,3061.2,0,seco,2022-01
+PZ-6,TSF,2022-02-14,Coronamiento muro,0,3061.2,0,seco,2022-02
+PZ-6,TSF,2022-03-14,Coronamiento muro,0,3061.2,0,seco,2022-03
+PZ-6,TSF,2022-04-14,Coronamiento muro,0,3061.2,0,seco,2022-04
+PZ-6,TSF,2022-05-14,Coronamiento muro,0,3061.2,0,seco,2022-05
+PZ-6,TSF,2022-06-14,Coronamiento muro,0,3061.2,0,seco,2022-06
+PZ-6,TSF,2022-07-30,Coronamiento muro,0,3061.2,0,seco,2022-07
+PZ-7,TSF,2020-02-27,Coronamiento muro,0,3061.5,0,seco,2020-02
+PZ-7,TSF,2020-05-27,Coronamiento muro,0,3061.5,0,seco,2020-05
+PZ-7,TSF,2020-07-18,Coronamiento muro,0,3061.5,0,seco,2020-07
+PZ-7,TSF,2020-08-13,Coronamiento muro,0,3061.5,0,seco,2020-08
+PZ-7,TSF,2020-08-30,Coronamiento muro,0,3061.5,0,seco,2020-08
+PZ-7,TSF,2020-10-06,Coronamiento muro,0,3061.5,0,seco,2020-10
+PZ-7,TSF,2020-11-01,Coronamiento muro,0,3061.5,0,seco,2020-11
+PZ-7,TSF,2020-12-02,Coronamiento muro,0,3061.5,0,seco,2020-12
+PZ-7,TSF,2020-12-01,Coronamiento muro,0,3061.5,0,seco,2020-12
+PZ-7,TSF,2021-01-23,Coronamiento muro,0,3061.5,0,seco,2021-01
+PZ-7,TSF,2021-02-23,Coronamiento muro,0,3061.5,0,seco,2021-02
+PZ-7,TSF,2021-03-23,Coronamiento muro,0,3061.5,0,seco,2021-03
+PZ-7,TSF,2021-04-23,Coronamiento muro,0,3061.5,0,seco,2021-04
+PZ-7,TSF,2021-05-21,Coronamiento muro,0,3061.5,0,seco,2021-05
+PZ-7,TSF,2021-06-18,Coronamiento muro,0,3061.5,0,seco,2021-06
+PZ-7,TSF,2021-07-16,Coronamiento muro,0,3061.5,0,seco,2021-07
+PZ-7,TSF,2021-08-16,Coronamiento muro,0,3061.5,0,seco,2021-08
+PZ-7,TSF,2021-09-30,Coronamiento muro,0,3061.5,0,seco,2021-09
+PZ-7,TSF,2021-10-14,Coronamiento muro,0,3061.5,0,seco,2021-10
+PZ-7,TSF,2021-11-14,Coronamiento muro,0,3061.5,0,seco,2021-11
+PZ-7,TSF,2021-12-14,Coronamiento muro,0,3061.5,0,seco,2021-12
+PZ-7,TSF,2022-01-14,Coronamiento muro,0,3061.5,0,seco,2022-01
+PZ-7,TSF,2022-02-14,Coronamiento muro,0,3061.5,0,seco,2022-02
+PZ-7,TSF,2022-03-14,Coronamiento muro,0,3061.5,0,seco,2022-03
+PZ-7,TSF,2022-04-14,Coronamiento muro,0,3061.5,0,seco,2022-04
+PZ-7,TSF,2022-05-14,Coronamiento muro,0,3061.5,0,seco,2022-05
+PZ-7,TSF,2022-06-14,Coronamiento muro,0,3061.5,0,seco,2022-06
+PZ-7,TSF,2022-07-30,Coronamiento muro,0,3061.5,0,seco,2022-07
+PZ-8,TSF,2020-02-27,Coronamiento muro,0,3064.2,0,seco,2020-02
+PZ-8,TSF,2020-05-27,Coronamiento muro,0,3064.2,0,seco,2020-05
+PZ-8,TSF,2020-07-18,Coronamiento muro,0,3064.2,0,seco,2020-07
+PZ-8,TSF,2020-08-13,Coronamiento muro,0,3064.2,0,seco,2020-08
+PZ-8,TSF,2020-08-30,Coronamiento muro,0,3064.2,0,seco,2020-08
+PZ-8,TSF,2020-10-06,Coronamiento muro,0,3064.2,0,seco,2020-10
+PZ-8,TSF,2020-11-01,Coronamiento muro,0,3064.2,0,seco,2020-11
+PZ-8,TSF,2020-12-02,Coronamiento muro,0,3064.2,0,seco,2020-12
+PZ-8,TSF,2020-12-01,Coronamiento muro,0,3064.2,0,seco,2020-12
+PZ-8,TSF,2021-01-23,Coronamiento muro,0,3064.2,0,seco,2021-01
+PZ-8,TSF,2021-02-23,Coronamiento muro,0,3064.2,0,seco,2021-02
+PZ-8,TSF,2021-03-23,Coronamiento muro,0,3064.2,0,seco,2021-03
+PZ-8,TSF,2021-04-23,Coronamiento muro,0,3064.2,0,seco,2021-04
+PZ-8,TSF,2021-05-21,Coronamiento muro,0,3064.2,0,seco,2021-05
+PZ-8,TSF,2021-06-18,Coronamiento muro,0,3064.2,0,seco,2021-06
+PZ-8,TSF,2021-07-16,Coronamiento muro,0,3064.2,0,seco,2021-07
+PZ-8,TSF,2021-08-16,Coronamiento muro,0,3064.2,0,seco,2021-08
+PZ-8,TSF,2021-09-30,Coronamiento muro,0,3064.2,0,seco,2021-09
+PZ-8,TSF,2021-10-14,Coronamiento muro,0,3064.2,0,seco,2021-10
+PZ-8,TSF,2021-11-14,Coronamiento muro,0,3064.2,0,seco,2021-11
+PZ-8,TSF,2021-12-14,Coronamiento muro,0,3064.2,0,seco,2021-12
+PZ-8,TSF,2022-01-14,Coronamiento muro,0,3064.2,0,seco,2022-01
+PZ-8,TSF,2022-02-14,Coronamiento muro,0,3064.2,0,seco,2022-02
+PZ-8,TSF,2022-03-14,Coronamiento muro,0,3064.2,0,seco,2022-03
+PZ-8,TSF,2022-04-14,Coronamiento muro,0,3064.2,0,seco,2022-04
+PZ-8,TSF,2022-05-14,Coronamiento muro,0,3064.2,0,seco,2022-05
+PZ-8,TSF,2022-06-14,Coronamiento muro,0,3064.2,0,seco,2022-06
+PZ-8,TSF,2022-07-30,Coronamiento muro,0,3064.2,0,seco,2022-07

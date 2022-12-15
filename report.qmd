@@ -1,0 +1,275 @@
+---
+format: 
+  html:
+    self-contained: true
+    echo: false
+  # docx:
+  #   reference-doc: docx/reference-doc.docx
+  #   toc: true
+  #   number-sections: false
+  #   highlight-style: github
+params: 
+  DATE: "2022-07"
+  PPT: "Piezómetros Tranque Relaves Julio 2022"
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup,echo=FALSE,include=FALSE, eval=TRUE}
+source("setup.R")
+source("global.R")
+REPORT_DATE <- format(as.Date(paste0(params$DATE,"-01"),format="%Y-%m-%d"),format="%B de %Y")
+MONTH <- params$DATE
+```
+
+# Introducción
+
+La faena de Compañía Minera Zaldívar SpA. (en adelante CMZ) se encuentra ubicada a 180 km al sureste de la ciudad de Antofagasta. Administrativamente, pertenece a la comuna de Antofagasta, ubicada en la provincia y región del mismo nombre, mientras que, geográficamente, esta se ubica en una zona de transición entre la pampa árida del Desierto de Atacama por el poniente y la llanura de la Puna de Atacama por el oriente, a una altitud media de 3.200 msnm (coordenadas UTM WGS 84 con Norte 7.327.000 y Este 499.550).
+
+Como parte de los trabajos de control y monitoreo de sus operaciones, CMZ realiza mensualmente el control de niveles freáticos mediante la medición de piezómetros en los sectores cuyos procesos operativos contemplan el manejo de soluciones, tales como el depósito de relaves y la piscina de recuperación de agua de procesos (en adelante, piscina de evaporación).
+
+De acuerdo con lo anterior, CMZ solicitó a SRK Consulting Chile (en adelante SRK) llevar a cabo controles mensuales de los niveles de agua registrados en los piezómetros ubicados en el depósito de relaves (Fase 4) y la piscina de evaporación. En la @fig-L, se presenta una imagen satelital que permite visualizar el depósito principal y la piscina de evaporación.
+
+![Vista satelital de depósito de relaves y piscina de evaporación CMZ](img/VistaSatelital.png){#fig-L}
+
+En este documento, se presentan los datos proporcionados por CMZ correspondientes al `r REPORT_DATE`, los que son procesados e interpretados por SRK. Es importante mencionar que, debido a las restricciones sanitarias aociadas por la pandemia COVID-19, durante el año 2021 y lo que va del 2022, las visitas a terreno se han visto restringidas, lo que por ahora no ha permitido al personal de SRK realizar las visitas a terreno.
+
+# Objetivos
+
+El objetivo de este documento es interpretar y analizar los resultados del monitoreo mensual de los niveles de agua registrados por CMZ en los piezómetros instalados del depósito de relaves (Fase 4) y la piscina de evaporación durante el mes de `r REPORT_DATE`
+
+# Antecedentes
+
+El antecedente proporcionado por CMZ para la elaboración del presente documento fue el que se muestra a continuación.
+
+-   Archivo PowerPoint `r params$PPT`
+
+# Piezómetros
+
+## Depósito de Relaves (Fase 4)
+
+Según la información proporcionada por CMZ, en el depósito de relaves (Fase 4), existen `r nrow(PID[SID=="TSF"])` piezómetros de tipo Casagrande distribuidos en el coronamiento y pie del muro. La tabla siguiente presenta el detalle de los piezómetros y la ubicación en planta se muestra en la @fig-T .
+
+<!-- Tabla -->
+
+```{r,tab.id='PTSF', label='PTSF',include=TRUE}
+#| label: tbl-PTSF
+#| tbl-cap: "Información piezómetros tipo Casagrande en sector piscina evaporación (Datos CMZ)"
+#| tbl-cap-location: top
+
+AUX <- PID[SID=="TSF",.("Piezómetro"=ID,"Ubicación"=LOC,"Latitud (S)"=LAT,"Longitud (E)"=LON,"Cota (msnm)"= round(C,digits = 0),"Longitud (m)"=L)]
+AUX |> flextable()
+```
+
+![Ubicación de los piezómetros Casagrande en depósito de relaves CMZ (Fase 4)](img/PiezometrosTranque.png){#fig-T}
+
+## Piscinas de Evaporación
+
+De acuerdo con la información proporcionada por CMZ, en el sector de la piscina de evaporación (ubicadas aguas abajo del depósito de relaves), existen `r nrow(PID[SID=="POND"])` piezómetros de tipo Casagrande distribuidos en el muro de contención y aguas abajo de la piscina. La tabla que sigue presenta el detalle de estos piezómetros y la @fig-A muestra su ubicación en planta.
+
+<!-- Tabla -->
+
+```{r,tab.id='PPOND', label='PPOND',include=TRUE }
+#| label: tbl-PPOND
+#| tbl-cap: "Información piezómetros tipo Casagrande en sector piscina evaporación (Datos CMZ)"
+#| tbl-cap-location: top
+
+AUX <- PID[SID=="POND",.("Piezómetro"=ID,"Ubicación"=LOC,"Latitud (S)"=LAT,"Longitud (E)"=LON,"Cota (msnm)"= round(C,digits = 0),"Longitud (m)"=L)]
+AUX |> flextable()
+```
+
+![Ubicación piezómetros Casagrande piscina de evaporación](img/PiezometrosPiscina.png){#fig-A}
+
+# Mediciones y Resultados
+
+## Depósito de Relaves (Fase 4)
+
+La tabla que sigue presenta las mediciones de los piezómetros Casagrande ubicados en el Depósito de Relaves durante el mes de `r REPORT_DATE`
+
+```{r }
+AUX <- DT[RDATE==MONTH & SID=="TSF" & OBS=="agua"]
+N_DRY <- nrow(AUX)
+if(N_DRY==0){
+  TXT_DRY <-"ningún piezómetro registró nivel freático."
+} 
+
+if(N_DRY==1){
+  ID <- AUX$ID |> toString()
+  TXT_DRY <-paste("sólo un piezómetro registró nivel freático y los restantes no presentaron lecturas.")
+} 
+
+if(N_DRY>1){
+  ID <- AUX$ID |> toString()
+  TXT_DRY <-paste(nrow(AUX),"piezómetros registraron nivel freático y los restantes no presentaron lecturas (pozos sin agua)")
+} 
+```
+
+```{r }
+# Piezometros con aumentos ----
+AUX <- DT[RDATE==MONTH & SID=="TSF" & DIFF>0]
+ID <- AUX$ID |> toString()
+MAX <- max(AUX$DIFF)
+if(nrow(AUX)==0) {TXT_MAX <- ""}
+if(nrow(AUX)==1) {
+  MAX <- (AUX$DIFF)
+  TXT_MAX <- paste("El piezómetro",ID,"reportó un aumento del nivel freático respecto del mes anterior de ",MAX," m.")}
+if(nrow(AUX)>1) {
+  TXT_MAX <- paste("Los piezómetros",ID,"reportaron un aumento del nivel freático respecto del mes anterior con un valor máximo de ",MAX," m.")}
+
+```
+
+```{r }
+# Piezometros con aumentos ----
+AUX <- DT[RDATE==MONTH & SID=="TSF" & DIFF<0]
+ID <- AUX$ID |> toString()
+if(nrow(AUX)==0) {TXT_MIN <- ""}
+
+if(nrow(AUX)==1) {
+ MIN <- (AUX$DIFF) 
+  TXT_MIN <- paste("El piezómetro",ID,"reportó un descenso del nivel freático respecto del mes anterior de ",MIN," m.")}
+if(nrow(AUX)>1) {
+  MIN <- min(AUX$DIFF)
+  TXT_MIN <- paste("Los piezómetros",ID,"reportaron un descenso del nivel freático respecto del mes anterior de ",MIN," m.")}
+
+```
+
+Respecto al nivel de agua detectado en los pozos del depósito de relaves, `r TXT_DRY` `r TXT_MAX` `r TXT_MIN` No fue posible medir el nivel de agua en los piezómetros PA-1 (medición que requiere uso de línea de vida) y PZ-2-4 (tapado).
+
+<!-- Tabla -->
+
+```{r,tab.id='TSF', label='TSF' ,include=TRUE}
+#| label: tbl-TSF
+#| tbl-cap: "Mediciones nivel piezométrico (datos CMZ)"
+#| tbl-cap-location: top
+
+AUX <- DT[RDATE==MONTH & SID=="TSF",.("Piezómetro"=ID,"Ubicación"=LOC,"Lectura (m)"=WL,"Cota (msnm)"=round(CD,digits = 0),"Diferencia (m)"=DIFF)]
+ID <- paste(AUX$ID,sep=",")
+AUX |> flextable()
+```
+Mediciones nivel piezométrico (datos CMZ)
+
+<!-- *Figura:* -->
+
+```{r}
+DATA <- DT[RDATE<=MONTH & SID=="TSF" & DIFF!=0,.(DATE,ID,CD)]
+# Remover series sin cambios
+PLOT <- ggplot(data=DATA)+geom_point(aes(y=CD,x=DATE,color=ID))  + 
+  geom_line(aes(y=CD,x=DATE,color=ID),show.legend = FALSE)+
+  scale_x_date(date_breaks = "1 month", date_labels =  "%b %Y") +
+   theme_bw() +
+  theme(axis.text.x = element_text(angle = 90))
+
+ggsave(plot=PLOT,filename=file.path("img","WL_TSF.png"),width = 7,height = 3, dpi = 600)
+```
+
+```{r }
+AUX <- DT[SID=="TSF" & OBS!="seco"]
+MIN <- min(AUX$CD)
+MAX <- max(AUX$CD)
+```
+
+La @fig-B muestra la variación de los niveles de agua desde enero de 2020 a `r REPORT_DATE` . Se observa que los niveles de agua mínimos y máximos registrados han variado entre las cotas `r MIN` y `r MAX` msnm, aproximadamente.
+
+![Niveles de agua en piezómetros Casagrande ubicados al pie del muro (los meses sin datos se asocian a la ausencia de medición o que el instrumento no registra agua)](img/WL_TSF.png){#fig-B}
+
+## Piscinas de Evaporación
+
+La tabla siguiente presenta las mediciones de los piezómetros Casagrande ubicados en la piscina de evaporación durante el mes de `r REPORT_DATE`
+
+```{r}
+AUX <- DT[RDATE==MONTH & SID=="POND" & OBS=="agua"]
+N_DRY <- nrow(AUX)
+if(N_DRY==0){
+  TXT_DRY <-"en ningún pozo se detectó el nivel freático."
+} 
+
+if(N_DRY==1){
+  ID <- AUX$ID |> toString()
+  TXT_DRY <-paste("sólo un piezómetro registró nivel freático y los restantes no presentaron lecturas.")
+} 
+
+if(N_DRY>1){
+  ID <- AUX$ID |> toString()
+  TXT_DRY <-paste(nrow(AUX),"piezómetros registraron nivel freático y los restantes no presentaron lecturas (pozos sin agua)")
+} 
+```
+
+```{r }
+# Piezometros con aumentos ----
+AUX <- DT[RDATE==MONTH & SID=="POND" & DIFF>0]
+ID <- AUX$ID |> toString()
+
+if(nrow(AUX)==0) {TXT_MAX <- ""}
+if(nrow(AUX)==1) {
+  MAX <- (AUX$DIFF)
+  TXT_MAX <- paste("El piezómetro",ID,"reportó un aumento del nivel freático respecto del mes anterior de ",MAX," m.")}
+if(nrow(AUX)>1) {
+    MAX <- (AUX$DIFF)
+  TXT_MAX <- paste("Los piezómetros",ID,"reportaron un aumento del nivel freático respecto del mes anterior con un valor máximo de ",MAX," m.")}
+
+```
+
+```{r }
+# Piezometros con aumentos ----
+AUX <- DT[RDATE==MONTH & SID=="POND" & DIFF<0]
+ID <- AUX$ID |> toString()
+if(nrow(AUX)==0) {TXT_MIN <- ""}
+if(nrow(AUX)==1) {
+  MIN <- (AUX$DIFF)
+  TXT_MIN <- paste("El piezómetro",ID,"reportó un descenso del nivel freático respecto del mes anterior de ",MIN," m.")}
+if(nrow(AUX)>1) {
+  MIN <- min(AUX$DIFF)
+  TXT_MIN <- paste("Los piezómetros",ID,"reportaron un descenso del nivel freático respecto del mes anterior con un valor mínimo de ",MIN," m.")}
+
+```
+
+Respecto al nivel de agua detectado en los pozos de la piscina, `r TXT_DRY` `r TXT_MAX` `r TXT_MIN`.
+
+<!-- Tabla -->
+
+```{r ,tab.id='POND', label='POND',include=TRUE}
+#| label: tbl-POND
+#| tbl-cap: "Mediciones nivel piezométrico (datos CMZ) en piscinas de evaporación"
+#| tbl-cap-location: top
+
+AUX <- DT[RDATE==MONTH & SID=="POND",.("Piezómetro"=ID,"Ubicación"=LOC,"Lectura (m)"=WL,"Cota (msnm)"=round(CD,digits = 0),"Diferencia (m)"=DIFF)]
+ID <- paste(AUX$ID,sep=",")
+AUX |> flextable()
+```
+Mediciones nivel piezométrico (datos CMZ) en piscinas de evaporación
+
+
+```{r }
+# Piezometros secos ----
+AUX <- DT[RDATE==MONTH & SID=="POND" & OBS!="seco"]
+ID <- AUX$ID |> toString()
+TXT <- ifelse(
+  nrow(AUX)==1,
+  paste("el único piezómetro",ID),
+  paste("los piezómetros",ID))
+
+```
+
+```{r }
+AUX <- DT[SID=="POND" & OBS!="seco"]
+MIN <- min(AUX$CD)
+MAX <- max(AUX$CD)
+```
+
+La @fig-P muestra la variación de los niveles de agua de `r TXT` desde enero de 2020 a `r REPORT_DATE` . Se observa que los niveles de boca de pozo registrados han variado entre las cotas `r MIN` y `r MAX` msnm, aproximadamente.
+
+<!-- *Figura:* -->
+
+```{r}
+DATA <- DT[RDATE<=MONTH & SID=="POND" & DIFF!=0,.(DATE,ID,CD)]
+# Remover series sin cambios
+PLOT <- ggplot(data=DATA)+geom_point(aes(y=CD,x=DATE,color=ID))  + 
+  geom_line(aes(y=CD,x=DATE,color=ID),show.legend = FALSE)+
+  scale_x_date(date_breaks = "1 month", date_labels =  "%b %Y") +
+   theme_bw() +
+  theme(axis.text.x = element_text(angle = 90))
+
+ggsave(plot=PLOT,filename=file.path("img","WL_POND.png"),width = 7,height = 3, dpi = 600)
+```
+
+![Niveles de agua en piezómetros Casagrande ubicados al pie del muro](img/WL_POND.png){#fig-P}

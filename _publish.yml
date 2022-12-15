@@ -1,0 +1,4 @@
+- source: report.qmd
+  netlify:
+    - id: 12f5ef80-ab31-4fc4-88d1-0b93e7e70ae2
+      url: 'https://srk-cmp-0722.netlify.app'
